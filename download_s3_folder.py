@@ -31,3 +31,10 @@ def download_s3_folder(bucket, prefix, dest_local_folder_path):
         print('Incomplete AWS credentials!')
     except Exception as e:
         print(f"An error occurred: {e}")
+
+if __name__ == '__main__':
+    BUCKET_NAME = ''
+    FOLDER_NAME = ''
+    LOCAL_FOLDER = ''
+
+    download_files(BUCKET_NAME, FOLDER_NAME, LOCAL_FOLDER)
